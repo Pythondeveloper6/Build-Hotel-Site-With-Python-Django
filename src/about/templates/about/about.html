@@ -1,0 +1,63 @@
+
+{% extends 'base.html' %}
+
+
+{% block body %}
+  
+
+  
+
+  <section class="probootstrap-slider flexslider2 page-inner">
+    <div class="overlay"></div>
+    <div class="probootstrap-wrap-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+
+            <div class="page-title probootstrap-animate">
+              <div class="probootstrap-breadcrumbs">
+                <a href="#">Home</a><span>About</span>
+              </div>
+              <h1>About Us</h1>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="slides">
+      <li style="background-image: url(img/slider_1.jpg);"></li>
+      <li style="background-image: url(img/slider_4.jpg);"></li>
+      <li style="background-image: url(img/slider_2.jpg);"></li>
+    </ul>
+  </section>
+  <!-- END: slider  -->
+
+  <section class="probootstrap-section">
+    <div class="container">
+      <div class="row heading">
+        <div class="col-md-12"><h2 class="mt0 mb50 text-center">Our Company</h2></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p><img src="{{about.image.url}}" class="img-responsive" alt="Free Bootstrap Template by uicookies.com"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Our Mission</h2>
+          <p> {{about.mission}}</p>
+        </div>
+        <div class="col-md-6">
+          <h2>Our Vision</h2>
+          <p> {{about.vision}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  {% endblock body %}

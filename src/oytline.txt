@@ -1,0 +1,31 @@
+ - Categories [with count]
+
+ - Properity : 
+ 	- name
+ 	- location
+ 	- type [sale - rent]
+ 	- price
+ 	- area
+ 	- beds_number
+ 	- baths_number
+ 	- garages_number
+ 	- image
+
+ - Agents: 
+ 	- name
+ 	- title
+ 	- image
+
+ - Aboutus
+ 	- image
+ 	- mission
+ 	- vision
+
+
+ - contact
+ - home 
+
+
+
+
+

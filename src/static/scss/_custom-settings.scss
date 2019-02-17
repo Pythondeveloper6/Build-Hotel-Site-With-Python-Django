@@ -1,0 +1,63 @@
+// Import font(s) from google.
+
+// Mixins
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot?1z9v6x');
+	src:url('../fonts/icomoon/icomoon.eot?1z9v6x#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.ttf?1z9v6x') format('truetype'),
+		url('../fonts/icomoon/icomoon.woff?1z9v6x') format('woff'),
+		url('../fonts/icomoon/icomoon.svg?1z9v6x#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin icomoon() {
+	
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+}
+
+@mixin inline-block() {
+	display:inline-block;
+  *display:inline;
+  zoom:1;
+}
+
+// Variables
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+$brand-primary: #2866AB;
+$brand-secondary: #ddf0f3;
+$brand-black: #000000;
+$brand-darker: #161C2E;
+$brand-white: #ffffff;
+$brand-dropdown: #FDBE34;
+$brand-body-text-color: #7e8890;
+$brand-heading-text-color: #374252;
+
+$screen-lg: 1200px;
+$screen-md: 992px;
+$screen-sm: 768px;
+$screen-xs: 480px;
+
+@mixin gradient($firstcolor, $secondcolor) {
+	background: rgba($firstcolor,1);
+	background: -moz-linear-gradient(left, rgba($firstcolor,1) 0%, rgba($secondcolor,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba($firstcolor,1)), color-stop(100%, rgba($secondcolor,1)));
+	background: -webkit-linear-gradient(left, rgba($firstcolor,1) 0%, rgba($secondcolor,1) 100%);
+	background: -o-linear-gradient(left, rgba($firstcolor,1) 0%, rgba($secondcolor,1) 100%);
+	background: -ms-linear-gradient(left, rgba($firstcolor,1) 0%, rgba($secondcolor,1) 100%);
+	background: linear-gradient(to right, rgba($firstcolor,1) 0%, rgba($secondcolor,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$firstcolor, endColorstr=$secondcolor, GradientType=1 );
+}
