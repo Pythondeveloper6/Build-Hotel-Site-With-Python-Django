@@ -1,3 +1,4 @@
+
 """
 Django settings for project project.
 
@@ -39,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'bootstrap4',
-    'django.contrib.gis'
+    'django.contrib.gis',
     'property',
     'agents',
     'about',
